@@ -1,0 +1,44 @@
+body{
+     background: url(../img/Background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+}
+p{
+    color: #000;
+    font-size: 25px;
+}
+.note
+{
+    text-align: center;
+    height: 80px;
+    background-color:#fff;
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    margin-bottom: 2%;
+}
+.form-control{
+/*    border-radius:1.5rem;*/
+}
+.btnSubmit
+{
+    border:none;
+/*    border-radius:1.5rem;*/
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #00bf78;
+    color: #fff;
+}
+
+/* batas*/
