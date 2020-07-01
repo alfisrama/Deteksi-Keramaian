@@ -60,6 +60,7 @@
         $('#confirm_password').on('change', function () {
             if ($('#password').val() == $('#confirm_password').val()) {
                 $('#messageConfirm').html('Match').css('color', 'green');
+                document.getElementById("submit").disabled = false;
             } else {
                 $('#messageConfirm').html('Not Match').css('color', 'red');
                 document.getElementById("submit").disabled = true;
