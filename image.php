@@ -143,15 +143,15 @@
     integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
 </script>
 <script>
-    $("#fileInput").change(function () {
-        var input = document.getElementById('fileInput');
+    $("#file").change(function () {
+        var input = document.getElementById('file');
         for (var i = 0; i < input.files.length; i++) {
             var ext = input.files[i].name.substring(input.files[i].name.lastIndexOf('.') + 1).toLowerCase()
-            if (ext == 'jpg') {
+            if ((ext == 'jpg' || ext == 'jpeg' || ext == 'bmp' || ext == 'png') {
                 $("#msg").text("Files are supported")
             } else {
                 $("#msg").text("Files are NOT supported")
-                document.getElementById("fileInput").value = "";
+                document.getElementById("file").value = "";
             }
         }
     });
@@ -168,7 +168,12 @@
 <script src="js/objectdetect.fullbody.js"></script>
 <script>
     let imgElement = document.getElementById('imageSrc');
-    let inputElement = document.getElementById('file');
+    let inputElement = document.getElementById('
+                                               
+                                               
+                                               
+                                               
+                                               ');
     inputElement.addEventListener('change', (e) => {
         imgElement.src = URL.createObjectURL(e.target.files[0]);
     }, false);
