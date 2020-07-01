@@ -36,7 +36,7 @@
         <?php 
             session_start();
             if($_SESSION['status']!="login"){
-                header("location:login.php?pesan=belum_login");
+                header("location:../improc/login.php?pesan=belum_login");
             }
         ?>
         <!-- Sidebar -->
@@ -168,12 +168,7 @@
 <script src="js/objectdetect.fullbody.js"></script>
 <script>
     let imgElement = document.getElementById('imageSrc');
-    let inputElement = document.getElementById('
-                                               
-                                               
-                                               
-                                               
-                                               ');
+    let inputElement = document.getElementById('file');
     inputElement.addEventListener('change', (e) => {
         imgElement.src = URL.createObjectURL(e.target.files[0]);
     }, false);
