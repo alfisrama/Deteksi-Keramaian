@@ -36,7 +36,7 @@
         <?php 
             session_start();
             if($_SESSION['status']!="login"){
-                header("location:../improc/login.php?pesan=belum_login");
+                header("location:login.php?pesan=belum_login");
             }
         ?>
         <!-- Sidebar -->
